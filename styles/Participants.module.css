@@ -1,0 +1,38 @@
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.headerContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.formContainer {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  
+}
+
+
+.titleSections {
+  flex-basis: 100%;
+  
+}
+
+.inputField {
+  width: 300px;
+}
+
+.inputGroup {
+display: flex;
+flex-wrap: wrap;
+gap: 10px;
+}
+
+.legalGuardian {
+margin-top: 50px;
+
+}

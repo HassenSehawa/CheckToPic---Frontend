@@ -1,0 +1,43 @@
+.groupContainer {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.groupHeader {
+  display: flex;
+ justify-content: space-between;
+ align-items: center;
+  
+}
+
+.groupInfos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+ 
+}
+.inputContainers {
+  margin-top: 55px;
+}
+
+.errorMsg {
+    color: red;
+    font-size: 14px;
+}
+
+.boxContainer {
+  display: flex;
+  gap: 20px;
+  border: 1px solid black;
+  height: 200px;
+  border-radius: 10px;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.buttonMsgContainer {
+display: flex;
+width: fit-content;
+flex-direction: column;
+gap: 20px;
+}

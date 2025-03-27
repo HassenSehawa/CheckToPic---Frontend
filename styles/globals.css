@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+:root { /* variables css dynamiques déclarées en amont pour éviter de répéter 
+  à réutiliser sur les éléments que l'on souhaite exemple color: var(--main-bg-color); */ 
+  --light-color: #ffffff;
+  
+  --main-bg-color: #2E35B3;
+  --second-bg-color: #dde3fc;
+  --third-bg-color: #BEBEBE;
+
+  --main-text-color: #040958;
+  --second-text-color: #322F2F;
+
+  --success-color: #4CAF50;
+  --warning-color: #DC1C4D;
+  --warning-color-dark: #8E0024;
+
+  --fontsize-main: 2em;
+  --fontsize-second: 1.5em;
+  --fontsize-third: 1em;
+  --fontsize-paragraphe: 1.1rem;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Quicksand', sans-serif ;
+  font-weight: 500;
+  box-sizing: border-box;
+  /*color: var(--main-text-color); à voir si on remet en bleu ou pas */
+  height: 100vh;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  color: var(--main-text-color);
+}
+
+a:active {
+  font-weight: bold;
+}
+
+button {
+  font-family: 'Quicksand', sans-serif;
+}
+
+li {
+  list-style-type: none;
+}

@@ -1,0 +1,18 @@
+.formHeader {
+  display: flex;
+  justify-content: space-between;
+}
+
+.formButton > button {
+  margin-right: 20px;
+}
+.formButton > button:last-child {
+  margin-right: 0;
+}
+
+.formAddInfos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 100px;
+  
+}

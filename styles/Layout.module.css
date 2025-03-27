@@ -1,0 +1,27 @@
+.container {  
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px auto 50px;
+    grid-template-areas:
+      "header" 
+      "main"
+      "footer";
+      height: 100vh;
+  }
+
+  .main {  
+    display: grid;
+    grid-template-columns: 200px 1.5fr;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-template-areas:
+      "mainNavbar mainContent";
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+
+  .mainContent { 
+    padding: 40px;
+    grid-area: mainContent; 
+    overflow-y: scroll;
+}
