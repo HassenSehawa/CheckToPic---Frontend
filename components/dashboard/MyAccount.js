@@ -13,7 +13,7 @@ function MyAccountWidget() {
 
   useEffect(() => {
     fetch(
-      `http://localhost:3000/admins/findAllByEtablissement/${etablissementId}`
+      `https://check-to-pic-backend.vercel.app/admins/findAllByEtablissement/${etablissementId}`
     )
       .then((response) => response.json())
       .then((data) => {

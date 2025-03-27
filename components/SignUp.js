@@ -47,7 +47,7 @@ function SignUp({ open, handleToggleModal }) {
   const etablissementListToDisplay = [];
 
   useEffect(() => {
-    fetch("http://localhost:3000/etablissements/allEtablissements")
+    fetch("https://check-to-pic-backend.vercel.app/etablissements/allEtablissements")
       .then((response) => response.json())
       .then((data) => {
         setEtablissementList(data.data.map((e) => e.name));
@@ -103,7 +103,7 @@ function SignUp({ open, handleToggleModal }) {
       return;
     }
 
-    fetch("http://localhost:3000/admins/signup", {
+    fetch("https://check-to-pic-backend.vercel.app/admins/signup", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({

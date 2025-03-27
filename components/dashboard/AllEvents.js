@@ -62,7 +62,7 @@ function AllEvents() {
   // Récupération des infos relatives aux events de l'établissement
   useEffect(() => {
     fetch(
-      `http://localhost:3000/events/eventsByEtablissementWithParticipantInfos/${etablissementId}`
+      `https://check-to-pic-backend.vercel.app/events/eventsByEtablissementWithParticipantInfos/${etablissementId}`
     )
       .then((response) => response.json())
       .then((data) => {
@@ -86,7 +86,7 @@ function AllEvents() {
 
   // Fonction pour gérer la validation d'une autorisation par l'admin
   const handleValidateAuth = (row) => {
-    fetch(`http://localhost:3000/events/validateAuth/${row.authId}`, {
+    fetch(`https://check-to-pic-backend.vercel.app/events/validateAuth/${row.authId}`, {
       method: "PUT",
       headers: { "Content-Type": "application/json" },
     })

@@ -17,7 +17,7 @@ function AdminProfileGroups() {
 
   // Récupération des infos relatives aux groupes gérés par l'admin
   useEffect(() => {
-    fetch("http://localhost:3000/groups/findAllGroupsByAdminToken", {
+    fetch("https://check-to-pic-backend.vercel.app/groups/findAllGroupsByAdminToken", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ token }),

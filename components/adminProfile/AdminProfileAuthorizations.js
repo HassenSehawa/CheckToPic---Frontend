@@ -19,7 +19,7 @@ function AdminProfileAuthorizations() {
   // Récupération des infos relatives aux autorisations des events gérés par l'admin
   useEffect(() => {
     fetch(
-      `http://localhost:3000/events/eventsByAdminWithParticipantInfos/${token}`
+      `https://check-to-pic-backend.vercel.app/events/eventsByAdminWithParticipantInfos/${token}`
     )
       .then((response) => response.json())
       .then((data) => {

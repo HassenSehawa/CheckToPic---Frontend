@@ -63,7 +63,7 @@ function Add() {
   };
 
   const handleSubmitParticipant = () => {
-    fetch("http://localhost:3000/participants/add", {
+    fetch("https://check-to-pic-backend.vercel.app/participants/add", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({

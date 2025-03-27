@@ -38,7 +38,7 @@ function Add() {
     const newParticipantIds = participantInGroup.map((e) => e.id);
 
     fetch(
-      `http://localhost:3000/groups/add/${admin.infoAdmin.id}/${admin.etablissement}`,
+      `https://check-to-pic-backend.vercel.app/groups/add/${admin.infoAdmin.id}/${admin.etablissement}`,
       {
         method: "POST",
         headers: { "Content-Type": "application/json" },

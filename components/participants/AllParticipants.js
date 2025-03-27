@@ -21,7 +21,7 @@ const [participantsData, setParticipantsData] = useState([]);
 //C/ Logique
 useEffect(() => {
   fetch(
-    `http://localhost:3000/participants/findAllByEtablissement/${admin.etablissement}/${admin.token}`
+    `https://check-to-pic-backend.vercel.app/participants/findAllByEtablissement/${admin.etablissement}/${admin.token}`
   )
     .then((response) => response.json())
     .then((data) => {
@@ -40,7 +40,7 @@ useEffect(() => {
 }, []);
 
 const handleDeleteGroup = (id) => {
-  fetch(`http://localhost:3000/participants/delete/${id}/${admin.token}`, { method: "DELETE" })
+  fetch(`https://check-to-pic-backend.vercel.app/participants/delete/${id}/${admin.token}`, { method: "DELETE" })
     .then((response) => response.json())
     .then((data) => {
       if (data.result) {

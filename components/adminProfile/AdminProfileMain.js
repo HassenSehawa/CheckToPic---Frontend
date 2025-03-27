@@ -51,7 +51,7 @@ function AdminProfileMain() {
     const formData = new FormData();
     formData.append("newAdminPicture", e.target.files[0]);
 
-    fetch(`http://localhost:3000/admins/updatePicture/${token}`, {
+    fetch(`https://check-to-pic-backend.vercel.app/admins/updatePicture/${token}`, {
       method: "PUT",
       body: formData,
     })
@@ -63,7 +63,7 @@ function AdminProfileMain() {
 
   const handleSubmit = () => {
     setOpen(!open);
-    fetch("http://localhost:3000/admins/updateByToken", {
+    fetch("https://check-to-pic-backend.vercel.app/admins/updateByToken", {
       method: "PUT",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ ...form, token }),

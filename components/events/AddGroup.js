@@ -22,7 +22,7 @@ function AddGroup({ groupInEtablissement, setGroupInEtablissement }) {
   useEffect(() => {
     if (admin && admin.etablissement) {
       fetch(
-        `http://localhost:3000/groups/findAllGroupsByEtablissement/${admin.etablissement}/${admin.token}`
+        `https://check-to-pic-backend.vercel.app/groups/findAllGroupsByEtablissement/${admin.etablissement}/${admin.token}`
       )
         .then((response) => response.json())
         .then((data) => {

@@ -23,7 +23,7 @@ function AllEvents() {
   //C/ Logique
   useEffect(() => {
     fetch(
-      `http://localhost:3000/events/findEventsByEtablissement/${admin.etablissement}`
+      `https://check-to-pic-backend.vercel.app/events/findEventsByEtablissement/${admin.etablissement}`
     )
       .then((response) => response.json())
       .then((data) => {

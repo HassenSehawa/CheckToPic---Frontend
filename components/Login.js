@@ -58,7 +58,7 @@ function Home() {
       return;
     }
 
-    fetch("http://localhost:3000/admins/signin", {
+    fetch("https://check-to-pic-backend.vercel.app/admins/signin", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ email: signIn.email, password: signIn.password }),

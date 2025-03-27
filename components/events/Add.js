@@ -113,9 +113,9 @@ function AddEvent() {
     if (!validateForm()) {
       return;
     }
-    fetch(`http://localhost:3000/groups/findOneGroup/${groupInEtablissement[0].id}`).then((response)=>response.json()).then((data)=>{
+    fetch(`https://check-to-pic-backend.vercel.app/groups/findOneGroup/${groupInEtablissement[0].id}`).then((response)=>response.json()).then((data)=>{
       const participantInEvent = data.group.participantIds;
-      return fetch(`http://localhost:3000/events/add/${admin.infoAdmin.id}`, {
+      return fetch(`https://check-to-pic-backend.vercel.app/events/add/${admin.infoAdmin.id}`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({

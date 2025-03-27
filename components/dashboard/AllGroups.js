@@ -17,7 +17,7 @@ function AllGroups() {
 
   // Récupération des infos relatives aux groupes gérés par l'admin
   useEffect(() => {
-    fetch(`http://localhost:3000/groups/findAllByEtablissementWithParticipantInfos/${etablissementId}`)
+    fetch(`https://check-to-pic-backend.vercel.app/groups/findAllByEtablissementWithParticipantInfos/${etablissementId}`)
       .then((response) => response.json())
       .then((data) => {
         if (data.result) {

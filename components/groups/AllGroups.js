@@ -21,7 +21,7 @@ function AllGroups() {
   //C/ Logique
   useEffect(() => {
     fetch(
-      `http://localhost:3000/groups/findAllGroupsByEtablissement/${admin.etablissement}/${admin.token}`
+      `https://check-to-pic-backend.vercel.app/groups/findAllGroupsByEtablissement/${admin.etablissement}/${admin.token}`
     )
       .then((response) => response.json())
       .then((data) => {
@@ -40,7 +40,7 @@ function AllGroups() {
   }, []);
 
   const handleDeleteGroup = (id) => {
-    fetch(`http://localhost:3000/groups/${id}/${admin.token}`, { method: "DELETE" })
+    fetch(`https://check-to-pic-backend.vercel.app/groups/${id}/${admin.token}`, { method: "DELETE" })
       .then((response) => response.json())
       .then((data) => {
         if (data.result) {
