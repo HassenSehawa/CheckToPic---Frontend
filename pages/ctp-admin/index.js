@@ -13,7 +13,7 @@ function Index() {
   const [etablissement, setEtablissement] = useState(null);
 
 useEffect(() => {
-  fetch(`http://localhost:3000/etablissements/find/${etablissementId}`)
+  fetch(`https://check-to-pic-backend.vercel.app/etablissements/find/${etablissementId}`)
   .then(response => response.json())
   .then(data => {
     if (data) {
